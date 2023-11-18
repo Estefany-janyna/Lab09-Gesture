@@ -13,6 +13,26 @@ namespace Lab09
         public MainPage()
         {
             InitializeComponent();
+
+            Item1.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new PanDemo());
+            };
+
+            Item2.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new PinchDemo());
+            };
+
+            Item3.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new SwipeDemo());
+            };
+            Item4.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new TapDemo());
+            };
         }
+
     }
 }

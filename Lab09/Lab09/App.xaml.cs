@@ -13,7 +13,7 @@ namespace Lab09
         {
             InitializeComponent();
 
-            MainPage = new TapDemo();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
